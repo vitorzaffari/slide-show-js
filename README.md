@@ -1,3 +1,3 @@
 Slideshow feito para praticar JS
 <br><br>
-<img widh:1500 src='assets/to_readme/teste.gif' />
+<img width=1000 src='assets/to_readme/teste.gif' />
