@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+/*
+
+*/
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.slider-container {
+    margin: 0 auto;
+    max-width: 400px;
+    height: 60vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+.slide:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./assets/imagem-1.jpg") center/cover no-repeat;
+}
+
+.slide:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./assets/imagem-2.jpg") center/cover no-repeat;
+}
+
+.slide:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./assets/imagem-3.jpg") center/cover no-repeat;
+}
+
+.slide:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./assets/imagem-4.jpg") center/cover no-repeat;
+}
+
+.slide {
+    transform: translateX(-00% );
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.proximo,
+.anterior {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.proximo:hover,
+.anterior:hover {
+    color: rgb(0, 221, 221);
+}
